@@ -78,6 +78,8 @@ If you use guice, you can easily create your factories
 public class LeadershipModule extends AbstractModule {
     @Override
     protected void configure() {
+        bind(LeadershipSchema.class).toInstance(LeadershipSchema.Default);
+
         bind(LeadershipStatus.class).to(LeadershipStatusImpl.class);
         
         bind(LeadershipElectionFactory.class).to(CassandraLeadershipElectionFactory.class);
