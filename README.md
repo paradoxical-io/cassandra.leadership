@@ -68,3 +68,19 @@ assertThat(leadership.tryClaimLeader(user2, Duration.ofSeconds(3))).isPresent();
 
 Listing current leader groups is provided for via the `LeadershipStatus` contract which will list you the current group and its leader id.  It also gives 
 you the amount of seconds that the leader will be active for.  When the leader is no longer active the entry is removed. 
+
+### Wiring into Guice
+
+If you use guice, you can easily create your factories
+
+
+```
+public class LeadershipModule extends AbstractModule {
+    @Override
+    protected void configure() {
+        bind(LeadershipStatus.class).to(LeadershipStatusImpl.class);
+        
+        bind(LeadershipElectionFactory.class).to(CassandraLeadershipElectionFactory.class);
+    }
+}
+```
