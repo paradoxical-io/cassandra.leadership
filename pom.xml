@@ -9,7 +9,7 @@
     
     <groupId>io.paradoxical</groupId>
     <artifactId>cassandra-leadership</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
     <description>Leadership election using Cassandra</description>
     <name>cassandra-leadership</name>
@@ -54,7 +54,8 @@
         <developerConnection>
             scm:git:git@github.com:paradoxical-io/cassandra.leadership.git
         </developerConnection>
-    </scm>
+      <tag>cassandra-leadership-1.0</tag>
+  </scm>
 
 
     <developers>
