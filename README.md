@@ -14,7 +14,7 @@ To install
 <dependency>
     <groupId>io.paradoxical</groupId>
     <artifactId>cassandra-leadership</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 </dependency>
 ```
 
