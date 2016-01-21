@@ -11,7 +11,7 @@
     <artifactId>cassandra-leadership</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    
+    <description>Leadership election using Cassandra</description>
     <name>cassandra-leadership</name>
     <url>http://maven.apache.org</url>
 
@@ -30,11 +30,11 @@
         <guava.version>18.0</guava.version>
         <logback.version>1.0.13</logback.version>
         <mockito.version>1.10.19</mockito.version>
-        <io.paradoxical.common.test>1.0-SNAPSHOT</io.paradoxical.common.test>
-        <io.paradoxical.common>1.0-SNAPSHOT</io.paradoxical.common>
+        <io.paradoxical.common.test>1.0</io.paradoxical.common.test>
+        <io.paradoxical.common>1.1</io.paradoxical.common>
         <junit.version>4.12</junit.version>
         <java.version>1.8</java.version>
-        <io.paradoxical.cassandra-loader>1.0-SNAPSHOT</io.paradoxical.cassandra-loader>
+        <io.paradoxical.cassandra-loader>1.0</io.paradoxical.cassandra-loader>
         <guice.version>4.0</guice.version>
         <assertj.version>3.0.0</assertj.version>
         <maven.compiler.plugin.version>3.0</maven.compiler.plugin.version>
@@ -47,6 +47,7 @@
     </properties>
     
     <scm>
+        <url>http://github.com/paradoxical-io/cassandra.leadership</url>
         <connection>
         	scm:git:git@github.com:paradoxical-io/cassandra.leadership.git
         </connection>
@@ -55,6 +56,17 @@
         </developerConnection>
     </scm>
 
+
+    <developers>
+        <developer>
+            <id>devshorts</id>
+            <name>Anton Kropp</name>
+        </developer>
+        <developer>
+            <id>jakeswenson</id>
+            <name>Jake Swenson</name>
+        </developer>
+    </developers>
 
     <distributionManagement>
         <snapshotRepository>
